@@ -12,9 +12,9 @@ void printInstance(Pilot::Reflection::ReflectionInstance& rinstance, void* insta
     for (size_t index = 0; index < fields_count; index++)
     {
         auto fields_count = fields[index];
-        cout<< "FieldTypeName: "  << fields_count.getFieldTypeName() 
+        cout<< "FieldTypeName:  "  << fields_count.getFieldTypeName() 
             << "    FieldName:  " << fields_count.getFieldName()
-            << "     " << *(float *)(fields_count.get(instance)) << endl;
+            << "    FieldValue:  " << *(int *)(fields_count.get(instance)) << endl;
     }
 }
 
